@@ -1,0 +1,10 @@
+services:
+  app:
+    container_name: screenshot-service
+    image: zenika/alpine-chrome:89-with-puppeteer
+    ports:
+      - 8081:80
+    volumes:
+      - ./:/screenshot-service
+    working_dir: /screenshot-service
+    entrypoint: ["node", "app/server.js"]
