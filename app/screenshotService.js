@@ -22,10 +22,6 @@ class ScreenshotService {
                 height: 720,
             });
 
-            // await page.goto(url, {
-            //     waitUntil: 'networkidle2',
-            // });
-
             await page.setContent(`
                     <script>
                       const flag = 'willyoubeabletocapturetheflag?{NTk5ODViNTNhMDMzM2RmOTUyODhmNzlh}';
